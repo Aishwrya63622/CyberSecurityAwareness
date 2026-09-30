@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Security Awareness</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f8ff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #123b68;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd54f;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: white;
+        }
+
+        .hero h2 {
+            color: #0b1f3a;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            width: 320px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #0b1f3a;
+            margin-bottom: 10px;
+        }
+
+        .card button {
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #0b1f3a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background: #1769aa;
+        }
+
+        .tips {
+            background: #e8f5e9;
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .tips h2 {
+            color: #1b5e20;
+            margin-bottom: 15px;
+        }
+
+        .tips li {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🛡️ Cyber Security Awareness</h1>
+        <p>Stay Safe Online</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#threats">Threats</a>
+        <a href="#tips">Safety Tips</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Protect Yourself Online</h2>
+        <p>
+            Learn about phishing, digital arrest scams,
+            and malicious applications.
+        </p>
+    </section>
+
+    <div class="container">
+
+        <h2 id="threats" style="text-align:center; margin-bottom:25px;">
+            Common Cyber Threats
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🎣 Phishing</h3>
+                <p>
+                    Phishing is a scam where criminals send fake
+                    messages or websites to steal passwords,
+                    banking information or personal data.
+                </p>
+
+                <button onclick="showMessage('Never click suspicious links or share OTPs.')">
+                    Safety Tip
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>🚨 Digital Arrest Scam</h3>
+                <p>
+                    Scammers may pretend to be police or government
+                    officials and threaten people with fake legal cases.
+                </p>
+
+                <button onclick="showMessage('Real officials will not demand money through a video call for a fake arrest.')">
+                    Safety Tip
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>📱 Malicious Applications</h3>
+                <p>
+                    Some harmful applications can steal personal data,
+                    passwords or other sensitive information.
+                </p>
+
+                <button onclick="showMessage('Install applications only from trusted sources and check permissions.')">
+                    Safety Tip
+                </button>
+            </div>
+
+        </div>
+
+        <section>
+    <h2>🚨 Report Cyber Crime</h2>
+    <p>If you face an online scam or cybercrime, report it to the official Cyber Crime Portal.</p>
+    <a href="https://cybercrime.gov.in/" target="_blank">
+        <button>Report Cyber Crime</button>
+    </a>
+</section>
+        <section class="tips" id="tips">
+            <h2>🛡️ Important Safety Tips</h2>
+
+            <ul>
+                <li>Never share your OTP, PIN or password.</li>
+                <li>Do not click unknown or suspicious links.</li>
+                <li>Use strong and unique passwords.</li>
+                <li>Enable two-factor authentication when available.</li>
+                <li>Download apps only from trusted sources.</li>
+                <li>Keep your phone and computer updated.</li>
+                <li>Report suspicious cybercrime incidents to the appropriate authorities.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Cyber Security Awareness | Stay Safe Online 🛡️</p>
+    </footer>
+
+    <script>
+        function showMessage(message) {
+            alert(message);
+        }
+    </script>
+
+</body>
+</html>
